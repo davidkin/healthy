@@ -4,12 +4,12 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'perqustion',
+    redirectTo: 'preview',
     pathMatch: 'full'
   },
   {
-    path: 'perqustion',
-    loadChildren: () => import('./pages/perquestion/perquestion.module').then( m => m.PerquestionModule)
+    path: 'preview',
+    loadChildren: () => import('./pages/preview/preview.module').then( m => m.PreviewPageModule)
   }
 ];
 
