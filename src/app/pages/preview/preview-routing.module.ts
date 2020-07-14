@@ -1,12 +1,11 @@
+import { PreviewPage } from './preview.page';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-
-import { PerquestionPages } from './perquestion.pages';
 
 const routes: Routes = [
   {
     path: '',
-    component: PerquestionPages
+    component: PreviewPage
   }
 ];
 
@@ -14,4 +13,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class PerqustionRoutingModule {}
+export class PreviewPageRoutingModule {}
