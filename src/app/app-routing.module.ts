@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {
     path: 'perqustion',
-    loadChildren: () => import('./perquestion/perquestion.module').then( m => m.PerquestionModule)
+    loadChildren: () => import('./pages/perquestion/perquestion.module').then( m => m.PerquestionModule)
   }
 ];
 
