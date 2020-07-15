@@ -3,18 +3,18 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
-import { AdviceThirdPage } from './advice-third.page';
-import { AdviceThirdRoutingModule } from './advice-third-routing.module';
+import { AdviceThreePage } from './advice-three.page';
+import { AdviceThreeRoutingModule } from './advice-three-routing.module';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AdviceThirdRoutingModule
+    AdviceThreeRoutingModule
   ],
   declarations: [
-    AdviceThirdPage
+    AdviceThreePage
   ]
 })
-export class AdviceThirdPageModule {}
+export class AdviceThreePageModule {}
