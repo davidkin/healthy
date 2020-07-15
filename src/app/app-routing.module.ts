@@ -4,6 +4,11 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
+    redirectTo: '/slider',
+    pathMatch: 'full'
+  },
+  {
+    path: '',
     loadChildren: () => import('./pages/preview/preview.module').then( m => m.PreviewPageModule)
   },
   {
@@ -16,8 +21,12 @@ const routes: Routes = [
   },
   {
     path: 'advice-three',
-    loadChildren: () => import('./pages/advice-third/advice-third.module').then( m => m.AdviceThirdPageModule)
-  }
+    loadChildren: () => import('./pages/advice-three/advice-three.module').then( m => m.AdviceThreePageModule)
+  },
+  {
+    path: 'slider',
+    loadChildren: () => import('./pages/slider/slider.module').then( m => m.SliderPageModule)
+  },
 ];
 
 @NgModule({
