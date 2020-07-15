@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, EventEmitter, OnInit, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-advice',
@@ -10,9 +10,15 @@ export class AdviceComponent implements OnInit {
   @Input() titleCount: string;
   @Input() description: string;
 
+  @Output() toNextSlides = new EventEmitter<number>();
+
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  onChangeSlide() {
+    this.toNextSlides.emit();
   }
 
 }

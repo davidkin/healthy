@@ -1,10 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
+import { IonSlides } from '@ionic/angular';
 
 @Component({
   templateUrl: './slider.page.html',
   styleUrls: ['./slider.page.scss']
 })
 export class SliderPage implements OnInit {
+  @ViewChild('slider') slideElm: IonSlides;
+
   slideOpts = {
     effect: 'flip',
     initialSlide: 0,
@@ -30,6 +33,10 @@ export class SliderPage implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  slideToNextAdvice() {
+    this.slideElm.slideNext();
   }
 
   private customBullet(swiper, index: number, slidesCount: number): string {

@@ -22,4 +22,15 @@
     .offset-top {
         top: -5px;
     }
+
+    .offset-top-three {
+        top: -40px;
+    }
+
+    .img-block {
+        --size: 30px;
+        position: absolute;
+        right: 0;
+        top: 10px;
+    }
 }
