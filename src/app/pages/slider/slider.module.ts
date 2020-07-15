@@ -6,6 +6,8 @@ import { IonicModule } from '@ionic/angular';
 import { SliderPageRoutingModule } from './slider-routing.module';
 import { SliderPage } from './slider.page';
 
+import { AdviceComponent } from 'src/app/components/advice/advice.component';
+
 @NgModule({
   imports: [
     CommonModule,
@@ -15,6 +17,7 @@ import { SliderPage } from './slider.page';
   ],
   declarations: [
     SliderPage,
+    AdviceComponent,
   ]
 })
 export class SliderPageModule {}
