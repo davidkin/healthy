@@ -6,8 +6,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SliderPage implements OnInit {
   slideOpts = {
-    initialSlide: 1,
-    speed: 400
+    effect: 'flip',
+    initialSlide: 0,
+    speed: 400,
+    slidesPerView: 1,
+    centeredSlides: 1
   };
 
   constructor() { }

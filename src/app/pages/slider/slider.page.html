@@ -1,5 +1,31 @@
 <ion-content fullscreen class="ion-padding" scroll-y="false">
-    <ion-slides pager="true" [options]="slideOpts">
+  <ion-grid style="height: 100%">
+    <ion-row justify-content-center align-items-center style="height: 100%">
+      
+      <ion-col size="12" ion-text-center>
+
+        <ion-slides pager="true" [options]="slideOpts">
+
+          <ion-slide>
+            <div class="slide-inner">
+              <!-- <app-ad -->
+            </div>
+          </ion-slide>
+
+          <ion-slide>
+            <div class="slide-inner">2</div>
+          </ion-slide>
+
+          <ion-slide>
+            <div class="slide-inner">3</div>
+          </ion-slide>
+
+        </ion-slides>
+
+      </ion-col>
+
+
+    <!-- <ion-slides pager="true" [options]="slideOpts">
 
         <ion-slide>
           <div class="slide">
@@ -21,5 +47,7 @@
           <p><b>Ionic Appflow</b> is a powerful set of services and features built on top of Ionic Framework that brings a totally new level of app development agility to mobile dev teams.</p>
         </ion-slide>
 
-    </ion-slides>
+    </ion-slides> -->
+    </ion-row>
+  </ion-grid>
 </ion-content>
