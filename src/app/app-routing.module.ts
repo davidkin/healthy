@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/slider',
+    redirectTo: '/agree-read-data',
     pathMatch: 'full'
   },
   {
@@ -14,6 +14,10 @@ const routes: Routes = [
   {
     path: 'slider',
     loadChildren: () => import('./pages/slider/slider.module').then( m => m.SliderPageModule)
+  },
+  {
+    path: 'agree-read-data',
+    loadChildren: () => import('./pages/agree-data-read/agree-data-read.module').then( m => m.AgreeReadDataPageModule)
   },
 ];
 
