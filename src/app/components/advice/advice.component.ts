@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Input, Output } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-advice',
@@ -10,15 +11,26 @@ export class AdviceComponent implements OnInit {
   @Input() titleCount: string;
   @Input() description: string;
 
-  @Output() toNextSlides = new EventEmitter<number>();
+  @Output() toNextSlide = new EventEmitter<any>();
+  @Output() toPrevSlide = new EventEmitter<any>();
 
-  constructor() { }
+  constructor(
+    private router: Router
+  ) { }
 
   ngOnInit(): void {
   }
 
-  onChangeSlide() {
-    this.toNextSlides.emit();
+  onChangeNextSlide() {
+    this.toNextSlide.emit();
+  }
+
+  onChangePrevSlide() {
+    this.toPrevSlide.emit();
+  }
+
+  toAgreeDataReadPage() {
+    this.router.navigate(['agree-read-data']);
   }
 
 }

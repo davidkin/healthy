@@ -33,4 +33,18 @@
         right: 0;
         top: 10px;
     }
+
+    .img-block-prev {
+        transform: rotate(180deg);
+        left: 0;
+        top: 2px;
+    }
+
+    .right-offset {
+        right: -40px;
+    }
+
+    .left-offset {
+        left: -40px;
+    }
 }

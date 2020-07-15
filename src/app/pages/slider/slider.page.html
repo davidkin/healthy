@@ -6,25 +6,13 @@
 
         <ion-slides pager="true" [options]="slideOpts" class="slider" #slider>
 
-          <ion-slide *ngFor="let item of slides; let i = index">
-
-            <!-- <ng-container *ngIf="item.id === slides[0].id">
-              <ion-thumbnail class="img-block" (click)="slideToNextAdvice()">
-                <img src="assets/images/advice/arrow.png" alt="arrow">
-              </ion-thumbnail>
-            </ng-container> -->
-
-            <!-- <ng-container *ngIf="item.id === slides[1].id">
-              <ion-thumbnail class="img-block" (click)="slideToNextAdvice()">
-                <img src="assets/images/advice/arrow.png" alt="arrow">
-              </ion-thumbnail>
-            </ng-container> -->
-
+          <ion-slide *ngFor="let item of slides; let i = index" class="slide-block">
             <app-advice 
               [id]="item.id" 
               [titleCount]="item.title" 
               [description]="item.advice"
-              (toNextSlides)="slideToNextAdvice($event)"
+              (toNextSlide)="slideToNextAdvice($event)"
+              (toPrevSlide)="slideToPrevAdvice($event)"
             ></app-advice>
           </ion-slide>
           

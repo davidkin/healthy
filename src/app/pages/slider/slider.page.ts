@@ -39,6 +39,10 @@ export class SliderPage implements OnInit {
     this.slideElm.slideNext();
   }
 
+  slideToPrevAdvice() {
+    this.slideElm.slidePrev();
+  }
+
   private customBullet(swiper, index: number, slidesCount: number): string {
     const bulletStyle = [
       'margin: 0 8px;',
