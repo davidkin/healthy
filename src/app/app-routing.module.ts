@@ -4,11 +4,11 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/agree-read-data',
+    redirectTo: '/preview',
     pathMatch: 'full'
   },
   {
-    path: '',
+    path: 'preview',
     loadChildren: () => import('./pages/preview/preview.module').then( m => m.PreviewPageModule)
   },
   {
