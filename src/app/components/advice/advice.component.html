@@ -2,7 +2,7 @@
   <div class="info-block" [ngClass]="{'offset-top': id === 2, 'offset-top-three': id === 3}">
     <div class="title-block">
         <ng-container *ngIf="id === 2 || id === 3">
-            <ion-thumbnail class="img-block img-block-prev" [ngClass]="{'left-offset': id === 3}" (click)="onChangePrevSlide()">
+            <ion-thumbnail class="img-block img-block-prev" (click)="onChangePrevSlide()">
               <img src="assets/images/advice/arrow.png" alt="arrow">
             </ion-thumbnail>
         </ng-container>
@@ -16,7 +16,7 @@
         </ng-container>
 
         <ng-container *ngIf="id === 3">
-            <ion-thumbnail class="img-block right-offset" (click)="toAgreeDataReadPage()">
+            <ion-thumbnail class="img-block" (click)="toAgreeDataReadPage()">
               <img src="assets/images/advice/arrow.png" alt="arrow">
             </ion-thumbnail>
         </ng-container>
