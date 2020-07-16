@@ -12,6 +12,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
 
     .title {
         margin: 30px 0;
@@ -43,6 +44,22 @@
                 font-family: 'OpenSans-Regular', sans-serif;
                 font-size: 12px;
             }
+        }
+    }
+
+    .agree {
+        display: flex;
+        font-size: 7px;
+        width: 90%;
+        position: absolute;
+        bottom: 25px;
+
+        .radio {
+            display: block;
+            height: 10px;
+            margin-right: 5px;
+            position: relative;
+            top: 1px;
         }
     }
 }
