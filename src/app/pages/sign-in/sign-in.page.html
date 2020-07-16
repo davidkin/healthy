@@ -1,1 +1,28 @@
-<p>sign-in works!</p>
+<ion-content fullscreen scroll-y="false" class="content">
+    <ion-grid style="height: 100%">
+      
+      <ion-row justify-content-center align-items-center style="height: 100%">
+        <ion-col size="12" ion-text-center>
+
+            <div class="container">
+                <h1 class="title">Health Balance</h1>
+
+                <form class="form">
+                    <ion-input type="text" class="input" placeholder="ФИО/Логин"></ion-input>
+                    <ion-input type="email" class="input" placeholder="E-mail"></ion-input>
+                    <ion-input type="password" class="input" placeholder="Пароль"></ion-input>
+
+                    <div class="btn-block">
+                        <ion-button class="button login-button" style="height: 45px; font-size: 18px; margin-top: 13px; margin-bottom: 10px;" expand="block">Войти</ion-button>
+                        <ion-button class="button register-button" style="height: 45px; font-size: 18px; --background: #0361aa; --color: #fff; margin-bottom: 10px;" expand="block">Регистрация</ion-button>
+                        <a [routerLink]="['']" class="forgot-password underline">Забыли логин или пароль?</a>
+                    </div>
+
+                </form>
+            </div>
+
+        </ion-col>
+    </ion-row>
+
+  </ion-grid>
+</ion-content>  
