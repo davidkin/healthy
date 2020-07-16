@@ -1,5 +1,12 @@
 .container {
-    p {
-        margin: 0;
+    .qa {
+        &-label {
+            font-size: 18px;
+            font-family: 'OpenSans-Light', sans-serif;
+        }
+
+        &-img {
+            margin-right: 25px;
+        }
     }
 }

@@ -7,7 +7,30 @@
             <ion-col size="12" ion-text-center>
                 
                 <div class="container">
-                    <p>With white</p>
+                    <ion-list class="qa-list">
+
+                        <ion-item class="qa-item" (click)="testClick()">
+                            <ion-thumbnail class="qa-img">
+                                <img src="assets/images/qa/apple.png">
+                            </ion-thumbnail>
+                            <ion-label class="qa-label">Питание</ion-label>
+                        </ion-item>
+
+                        <ion-item class="qa-item" (click)="testClick()">
+                            <ion-thumbnail class="qa-img">
+                                <img src="assets/images/qa/run.png">
+                            </ion-thumbnail>
+                            <ion-label class="qa-label">Название опроса</ion-label>
+                        </ion-item>
+                        
+                        <ion-item class="qa-item" (click)="testClick()">
+                            <ion-thumbnail class="qa-img">
+                                <img src="assets/images/qa/mind.png">
+                            </ion-thumbnail>
+                            <ion-label class="qa-label">Психология</ion-label>
+                        </ion-item>
+
+                    </ion-list>
                 </div>
                 
             </ion-col>

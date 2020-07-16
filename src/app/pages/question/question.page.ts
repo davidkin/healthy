@@ -11,4 +11,9 @@ export class QuestionPage implements OnInit {
   ngOnInit(): void {
   }
 
+  testClick() {
+    console.log('test');
+
+  }
+
 }
