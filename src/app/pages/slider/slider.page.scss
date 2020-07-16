@@ -1,0 +1,21 @@
+.content {
+    --background: none;
+    background-image: url('/assets/images/advice/top-preview.png');
+    background-size: contain;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+.slider {
+    height: 100vh;
+    --bullet-background: transparent;
+    --bullet-background-active: #0361aa;
+}
+
+.img-block {
+    --size: 25px;
+    position: absolute;
+    right: 40px;
+    top: 295px;
+    z-index: 10;
+}

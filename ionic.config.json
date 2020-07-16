@@ -1,7 +1,8 @@
 {
   "name": "healthy",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
   "type": "angular"
 }
