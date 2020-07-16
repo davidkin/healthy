@@ -12,6 +12,8 @@
 .title-block {
     display: flex;
     align-items: center;
+    position: relative;
+    top: -10px;
 
     .title {
         color: #fff;
