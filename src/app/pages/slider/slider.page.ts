@@ -13,15 +13,7 @@ export class SliderPage implements OnInit {
     initialSlide: 0,
     speed: 400,
     slidesPerView: 1,
-    centeredSlides: 1,
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'custom',
-      clickable: true,
-      renderCustom: (swiper, index, slidesCount) => {
-        return this.customBullet(swiper, index, slidesCount);
-      }
-    }
+    centeredSlides: 1
   };
 
   slides = [
@@ -43,34 +35,4 @@ export class SliderPage implements OnInit {
     this.slideElm.slidePrev();
   }
 
-  private customBullet(swiper, index: number, slidesCount: number): string {
-    const bulletStyle = [
-      'margin: 0 8px;',
-      'border: 1px solid #0360aa;',
-      'width: 15px;',
-      'height: 15px;', 'opacity: 1;',
-      'display: inline-block;',
-      'border-radius: 100%'
-    ];
-    const bulletClasses = ['swiper-pagination-bullet']; // 'swiper-pagination-bullet-active'
-    const bulletBar = `<span class='${bulletClasses.join(' ')}' style='${bulletStyle.join(' ')}'></span>`;
-
-    const bulletContainerStlyes = [
-      'position: absolute;',
-      'text-align: center;',
-      'transform: translate3d(0, 0, 0);',
-      'z-index: 10;',
-      'bottom: 70px !important;',
-      'width: 100%'
-    ];
-    let bulletContainer = `<div class='swiper-pagination' style='${bulletContainerStlyes.join(' ')}'>`;
-
-    for (let i = 1; i <= slidesCount; i++) {
-      bulletContainer += bulletBar;
-    }
-
-    const finalContainer = bulletContainer + '</span></div>';
-
-    return finalContainer;
-  }
 }
