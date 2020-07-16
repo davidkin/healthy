@@ -1,0 +1,14 @@
+<ion-list class="list">
+
+    <ion-item 
+        *ngFor="let item of list"
+        class="list-item" 
+        (click)="testClick()" 
+    >
+        <ion-thumbnail class="list-img" [ngStyle]="customImgStyles">
+            <img [src]="item.img">
+        </ion-thumbnail>
+        <ion-label class="list-label">{{ item.title }}</ion-label>
+    </ion-item>
+    
+</ion-list>
