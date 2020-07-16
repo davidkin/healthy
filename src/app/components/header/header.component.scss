@@ -1,4 +1,27 @@
 .toolbar {
-    --background: #5260ff;
+    --background: none;
     --color: #fff;
+    --min-height: 80px;
+
+    background-image: url('/assets/images/header/header-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.title-block {
+    display: flex;
+    align-items: center;
+
+    .title {
+        color: #fff;
+        font-size: 18px;
+        font-family: 'OpenSans-Regular', sans-serif;
+        margin: 0;
+    }
+    
+    .arrow-back {
+        width: 20px;
+        margin: 3px 15px 0 25px;
+    }
 }

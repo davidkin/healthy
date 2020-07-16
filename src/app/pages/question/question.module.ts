@@ -5,6 +5,7 @@ import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { QuestionPageRoutingModule } from './question-routing';
 import { QuestionPage } from './question.page';
+import { HeaderComponent } from 'src/app/components/header/header.component';
 
 @NgModule({
   imports: [
@@ -15,6 +16,7 @@ import { QuestionPage } from './question.page';
   ],
   declarations: [
     QuestionPage,
+    HeaderComponent
   ]
 })
 export class QuestionPageModule {}
