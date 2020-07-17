@@ -27,6 +27,10 @@ const routes: Routes = [
     path: 'question',
     loadChildren: () => import('./pages/question/question.module').then( m => m.QuestionPageModule)
   },
+  {
+    path: 'web-rf',
+    loadChildren: () => import('./pages/web-rf/web-rf.module').then( m => m.SliderPageModule)
+  },
 ];
 
 @NgModule({
