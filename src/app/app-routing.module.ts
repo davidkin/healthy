@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/program-name',
+    redirectTo: '/individual-task',
     pathMatch: 'full'
   },
   {
@@ -34,6 +34,10 @@ const routes: Routes = [
   {
     path: 'program-name',
     loadChildren: () => import('./pages/program-name/program-name.module').then( m => m.ProgramNamePageModule)
+  },
+  {
+    path: 'individual-task',
+    loadChildren: () => import('./pages/individual-task/individual-task.module').then( m => m.IndividualTaskPageModule)
   },
 ];
 
