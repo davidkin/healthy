@@ -1,1 +1,44 @@
-<p>individual-task works!</p>
+<app-header [title]="'Индивидуальные задания'"></app-header>
+
+<ion-content fullscreen class="dark-container">
+    <ion-grid class="container-grid">
+      
+        <ion-row justify-content-center align-items-center>
+            <ion-col size="12" ion-text-center>
+                
+                <div class="container">
+                   <app-list 
+                        [list]="listData" 
+                        [showLastBorder]="false" 
+                        [customStyles]="{ 'font-size': '15px' }"
+                    ></app-list>
+
+                    <div class="item-group">
+                        <div class="item">
+                            <ion-thumbnail class="item-img">
+                                <img src="assets/images/individual/man.png" alt="man">
+                            </ion-thumbnail>
+                            <p class="item-text">Личный кабинет</p>
+                        </div>
+
+                        <div class="item">
+                            <ion-thumbnail class="item-img">
+                                <img src="assets/images/individual/goblet.png" alt="goblet">
+                            </ion-thumbnail>
+                            <p class="item-text">Лидерборд</p>
+                        </div>
+
+                        <div class="item">
+                            <ion-thumbnail class="item-img">
+                                <img src="assets/images/individual/calendar.png" alt="calendar">
+                            </ion-thumbnail>
+                            <p class="item-text">Календарь</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+</ion-content>
