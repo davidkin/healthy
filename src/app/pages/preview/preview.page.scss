@@ -1,8 +1,11 @@
+@import "../../../assets/styles/vars";
+@import "../../../assets/styles/mixins";
+
 .content {
-    
+
     text-align: center;
     position: relative;
-    
+
     .logo {
         --size: 35px;
         position: relative;
@@ -15,19 +18,17 @@
     }
 
     .title {
-        font-size: 41px;
-        font-family: 'OpenSans-Regular', sans-serif;
         margin-top: 0;
         margin-bottom: 10%;
     }
-    
+
     .info-text {
-        font-family: 'OpenSans-Light', sans-serif;
-        font-size: 21px;
+        @include styleForText($fontSizeContent, $fontLight);
+
         margin: 0 auto 14%;
         width: 95%;
     }
-    
+
     .advice-text {
         color: #0361aa;
         font-size: 16px;
