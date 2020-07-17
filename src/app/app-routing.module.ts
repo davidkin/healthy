@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/prev',
+    redirectTo: '/group-task',
     pathMatch: 'full'
   },
   {
@@ -42,6 +42,10 @@ const routes: Routes = [
   {
     path: 'prev',
     loadChildren: () => import('./pages/prev-page/prev.module').then( m => m.PrevPageModule)
+  },
+  {
+    path: 'group-task',
+    loadChildren: () => import('./pages/group-task/group-task.module').then( m => m.GroupTaskPageModule)
   },
 ];
 
