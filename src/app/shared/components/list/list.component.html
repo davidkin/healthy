@@ -1,14 +1,18 @@
 <ion-list class="list">
 
     <ion-item 
-        *ngFor="let item of list"
+        *ngFor="let item of list; let i = index; let last = last"
         class="list-item" 
         (click)="testClick()" 
+        [lines]="last && !showLastBorder ? 'none' : 'line'"
     >
         <ion-thumbnail class="list-img" [ngStyle]="customImgStyles">
             <img [src]="item.img">
         </ion-thumbnail>
-        <ion-label class="list-label">{{ item.title }}</ion-label>
+        <ion-label class="list-label">
+            {{ item.title }}
+            <a *ngIf="item.subLink" [routerLink]="['']" class="list-link">{{ item.subLink }}</a>
+        </ion-label>
     </ion-item>
     
 </ion-list>
