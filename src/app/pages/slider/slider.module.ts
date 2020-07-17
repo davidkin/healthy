@@ -1,23 +1,17 @@
 import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
 
-import { IonicModule } from '@ionic/angular';
 import { SliderPageRoutingModule } from './slider-routing.module';
 import { SliderPage } from './slider.page';
 
-import { AdviceComponent } from 'src/app/components/advice/advice.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
+    SharedModule,
     SliderPageRoutingModule
   ],
   declarations: [
     SliderPage,
-    AdviceComponent,
   ]
 })
 export class SliderPageModule {}
