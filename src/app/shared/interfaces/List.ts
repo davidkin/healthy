@@ -3,4 +3,5 @@ export interface IList {
     title: string;
     subLink?: string;
     subTitle?: string;
+    note?: string;
 }

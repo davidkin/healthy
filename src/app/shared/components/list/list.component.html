@@ -15,6 +15,10 @@
             {{ item.title }}
             <a *ngIf="item.subLink" [routerLink]="['']" class="list-link">{{ item.subLink }}</a>
         </ion-label>
+
+        <ion-note *ngIf="item.note" slot="end" class="list-note">
+            <span class="list-note-span">{{ item.note }}</span> из 10
+        </ion-note>
     </ion-item>
     
 </ion-list>
