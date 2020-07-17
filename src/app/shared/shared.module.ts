@@ -8,12 +8,14 @@ import { ListComponent } from './components/list/list.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AdviceComponent } from './components/advice/advice.component';
 import { RouterModule } from '@angular/router';
+import { SearchComponent } from './components/search/search.component';
 
 @NgModule({
   declarations: [
     ListComponent,
     HeaderComponent,
-    AdviceComponent
+    AdviceComponent,
+    SearchComponent
   ],
   imports: [
     CommonModule,
@@ -29,7 +31,8 @@ import { RouterModule } from '@angular/router';
 
     ListComponent,
     HeaderComponent,
-    AdviceComponent
+    AdviceComponent,
+    SearchComponent
   ]
 })
 export class SharedModule {}
