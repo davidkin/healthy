@@ -8,7 +8,7 @@ import { IList } from '../../interfaces/List';
 })
 export class ListComponent implements OnInit {
   @Input() list: IList[] = [];
-  @Input() customImgStyles?;
+  @Input() customStyles?;
   @Input() showLastBorder = true;
 
   constructor() { }

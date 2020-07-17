@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/web-rf',
+    redirectTo: '/program-name',
     pathMatch: 'full'
   },
   {
@@ -30,6 +30,10 @@ const routes: Routes = [
   {
     path: 'web-rf',
     loadChildren: () => import('./pages/web-rf/web-rf.module').then( m => m.SliderPageModule)
+  },
+  {
+    path: 'program-name',
+    loadChildren: () => import('./pages/program-name/program-name.module').then( m => m.ProgramNamePageModule)
   },
 ];
 
