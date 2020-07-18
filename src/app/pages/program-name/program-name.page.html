@@ -1,0 +1,21 @@
+<app-header [title]="'Название программы'"></app-header>
+
+<ion-content fullscreen class="dark-container">
+    <ion-grid class="container-grid">
+      
+        <ion-row justify-content-center align-items-center>
+            <ion-col size="12" ion-text-center>
+                
+                <div class="container">
+                   <app-list 
+                        [list]="listData" 
+                        [showLastBorder]="false" 
+                        [customStyles]="{ 'font-size': '15px' }"
+                    ></app-list>
+                </div>
+                
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+</ion-content>

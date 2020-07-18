@@ -1,17 +1,17 @@
 import { NgModule } from '@angular/core';
 
-import { SliderPageRoutingModule } from './slider-routing.module';
-import { SliderPage } from './slider.page';
+import { WebRfPage } from './web-rf.page';
+import { WebRfPageRoutingModule } from './web-rf-routing.module';
 
 import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   imports: [
     SharedModule,
-    SliderPageRoutingModule
+    WebRfPageRoutingModule
   ],
   declarations: [
-    SliderPage,
+    WebRfPage,
   ]
 })
 export class SliderPageModule {}
