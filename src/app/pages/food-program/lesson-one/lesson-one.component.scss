@@ -48,3 +48,54 @@
         color: #0360aa;
     }
 }
+
+.lesson-one {
+    &-title {
+        font-size: 14px;
+        color: #0360aa;
+        margin: 10px 0 25px;
+        font-family: 'OpenSans-Regular', sans-serif;
+    }
+
+    &-qa {
+
+        .qa-text {
+            color: #3c3c3b;
+            font-size: 14px;
+            display: flex;
+            justify-content: flex-start;
+            width: 75%;
+            font-family: 'OpenSans-Regular', sans-serif;
+
+            .qa-span {
+                color: #0360aa;
+                margin-right: 13px;
+            }
+        }
+
+        .qa-answers {
+            display: flex;
+            align-items: center;
+            margin-top: 25px;
+
+            .radio-block {
+                margin-left: 25px;
+
+                .answer-input {
+                    margin-right: 7px;
+                }
+
+                .answer-label {
+                    font-family: 'OpenSans-Regular', sans-serif;
+                    font-size: 14px;
+                    color: #3c3c3b;
+                }
+            }
+        }
+
+    }
+}
+
+.btn-block {
+    margin-top: 30px;
+}
