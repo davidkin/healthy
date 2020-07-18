@@ -12,4 +12,9 @@ export class LessonTwoComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  toLessonThree() {
+    console.log(1);
+
+  }
+
 }
