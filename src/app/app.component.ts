@@ -8,6 +8,7 @@ import { MenuController } from '@ionic/angular';
 })
 export class AppComponent implements OnInit {
   showSubMenu = false;
+  curentId: number;
 
   menuItems = [
     { id: 1, title: 'Личный кабинет' },
@@ -54,7 +55,12 @@ export class AppComponent implements OnInit {
     this.menu.close();
   }
 
-  toggleSubMenu() {
+  isSameItem(id): boolean {
+    return this.curentId === id;
+  }
+
+  toggleSubMenu(item) {
+    this.curentId = item.id;
     this.showSubMenu = !this.showSubMenu;
   }
 }

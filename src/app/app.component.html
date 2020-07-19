@@ -23,23 +23,26 @@
             class="menu-item"
             *ngFor="let item of menuItems; let last = last"
           >{{ item.title }}
-            <ul class="sub-menu" *ngIf="item.subMenu && showSubMenu">
-              <li 
-                class="sub-menu-item" 
-                *ngFor="let subItem of item.subMenu"
-              >
-                {{ subItem.title }} ({{ subItem.count || 'нет активных'}})
-              </li>
-            </ul> 
+
+            <ng-container *ngIf="item.subMenu && showSubMenu">
+              <ul class="sub-menu" *ngIf="isSameItem(item.id)">
+                <li 
+                  class="sub-menu-item" 
+                  *ngFor="let subItem of item.subMenu"
+                >
+                  {{ subItem.title }} ({{ subItem.count || 'нет активных'}})
+                </li>
+              </ul> 
+            </ng-container>
 
             <button 
               class="toggle-subMenu"
               [ngClass]="{
-                'onSubMenu': showSubMenu,
+                'onSubMenu': showSubMenu && isSameItem(item.id),
                 'offSubMenu': !showSubMenu
               }"
               *ngIf="item.subMenu" 
-              (click)="toggleSubMenu()"
+              (click)="toggleSubMenu(item)"
             >
               <img src="assets/images/menu/arrow-down.png" alt="toggle-subMenu">
             </button>
