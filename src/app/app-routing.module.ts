@@ -51,6 +51,10 @@ const routes: Routes = [
     path: 'food-program',
     loadChildren: () => import('./pages/food-program/food-program.module').then( m => m.FoodProgramPageModule)
   },
+  {
+    path: 'web-rf-created',
+    loadChildren: () => import('./pages/web-rf-created/web-rf-created.module').then( m => m.WebRfCreatedPageModule)
+  },
 ];
 
 @NgModule({
