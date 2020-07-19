@@ -10,14 +10,10 @@ import { LessonFiveComponent } from './lesson-five/lesson-five.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/food-program/lesson-1',
-    pathMatch: 'full'
-  },
-  {
-    path: '',
     component: FoodProgramPage,
 
     children: [
+      { path: '', redirectTo: '/food-program/lesson-1', pathMatch: 'full'},
       { path: 'lesson-1', component: LessonOneComponent },
       { path: 'lesson-2', component: LessonTwoComponent },
       { path: 'lesson-3', component: LessonThreeComponent },
