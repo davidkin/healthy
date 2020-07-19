@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/food-program',
+    redirectTo: '/food-program/lesson-1',
     pathMatch: 'full'
   },
   {
@@ -50,6 +50,10 @@ const routes: Routes = [
   {
     path: 'food-program',
     loadChildren: () => import('./pages/food-program/food-program.module').then( m => m.FoodProgramPageModule)
+  },
+  {
+    path: 'web-rf-created',
+    loadChildren: () => import('./pages/web-rf-created/web-rf-created.module').then( m => m.WebRfCreatedPageModule)
   },
 ];
 

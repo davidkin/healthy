@@ -48,3 +48,26 @@
         color: #0360aa;
     }
 }
+
+
+.lesson-sub-title {
+    font-size: 14px;
+    color: #0360aa;
+    margin: 10px 0 25px;
+    font-family: 'OpenSans-Regular', sans-serif;
+}
+
+.lesson-desc {
+    font-size: 14px;
+}
+
+.btn-block {
+    .button-link {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        color: #0360aa;
+        font-size: 18px;
+        margin: 30px auto;
+    }
+}

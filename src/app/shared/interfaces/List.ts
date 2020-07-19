@@ -4,4 +4,5 @@ export interface IList {
     subLink?: string;
     subTitle?: string;
     note?: string;
+    editButton?: string;
 }

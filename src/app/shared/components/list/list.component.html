@@ -14,6 +14,11 @@
             <span *ngIf="item.subTitle" class="list-sub-title">{{ item.subTitle }}</span>
             {{ item.title }}
             <a *ngIf="item.subLink" [routerLink]="['']" class="list-link">{{ item.subLink }}</a>
+            <ion-button 
+                *ngIf="item.editButton" 
+                size="small"
+                class="list-edit-button"
+            >{{ item.editButton }}</ion-button>
         </ion-label>
 
         <ion-note *ngIf="item.note" slot="end" class="list-note">

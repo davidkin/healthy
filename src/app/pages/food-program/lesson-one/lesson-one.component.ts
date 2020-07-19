@@ -16,7 +16,7 @@ export class LessonOneComponent implements OnInit {
   }
 
   toLessonTwo() {
-    this.router.navigate(['/food-program/lesson-2']);
+    this.router.navigate(['/food-program/lesson-3']);
   }
 
 }

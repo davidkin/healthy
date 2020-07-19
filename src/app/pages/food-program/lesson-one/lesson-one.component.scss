@@ -49,51 +49,49 @@
     }
 }
 
-.lesson-one {
-    &-title {
+.lesson-sub-title {
+    font-size: 14px;
+    color: #0360aa;
+    margin: 10px 0 25px;
+    font-family: 'OpenSans-Regular', sans-serif;
+}
+
+.lesson-qa {
+
+    .qa-text {
+        color: #3c3c3b;
         font-size: 14px;
-        color: #0360aa;
-        margin: 10px 0 25px;
+        display: flex;
+        justify-content: flex-start;
+        width: 75%;
         font-family: 'OpenSans-Regular', sans-serif;
+
+        .qa-span {
+            color: #0360aa;
+            margin-right: 13px;
+        }
     }
 
-    &-qa {
+    .qa-answers {
+        display: flex;
+        align-items: center;
+        margin-top: 25px;
 
-        .qa-text {
-            color: #3c3c3b;
-            font-size: 14px;
-            display: flex;
-            justify-content: flex-start;
-            width: 75%;
-            font-family: 'OpenSans-Regular', sans-serif;
+        .radio-block {
+            margin-left: 25px;
 
-            .qa-span {
-                color: #0360aa;
-                margin-right: 13px;
+            .answer-input {
+                margin-right: 7px;
+            }
+
+            .answer-label {
+                font-family: 'OpenSans-Regular', sans-serif;
+                font-size: 14px;
+                color: #3c3c3b;
             }
         }
-
-        .qa-answers {
-            display: flex;
-            align-items: center;
-            margin-top: 25px;
-
-            .radio-block {
-                margin-left: 25px;
-
-                .answer-input {
-                    margin-right: 7px;
-                }
-
-                .answer-label {
-                    font-family: 'OpenSans-Regular', sans-serif;
-                    font-size: 14px;
-                    color: #3c3c3b;
-                }
-            }
-        }
-
     }
+
 }
 
 .btn-block {
