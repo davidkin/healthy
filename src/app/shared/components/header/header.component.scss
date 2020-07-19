@@ -25,3 +25,13 @@
         margin: 3px 15px 0 25px;
     }
 }
+
+.menu-block {
+    margin-right: 15px;
+    margin-top: -1px;
+
+    .menu-button {
+        --color: #fff;
+        font-size: 38px;
+    }
+}
