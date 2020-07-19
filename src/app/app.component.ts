@@ -7,13 +7,33 @@ import { MenuController } from '@ionic/angular';
   styleUrls: ['app.component.scss']
 })
 export class AppComponent implements OnInit {
+  showSubMenu = false;
 
   menuItems = [
     { id: 1, title: 'Личный кабинет' },
     { id: 2, title: 'Программы' },
-    { id: 3, title: 'Задания' },
-    { id: 4, title: 'Лидерборд' },
-    { id: 5, title: 'Новости' },
+    {
+      id: 3,
+      title: 'Задания',
+      subMenu: [
+        { id: 3.1, title: 'Групповые задания', count: 0},
+        { id: 3.2, title: 'Индивидуальные', count: 2}
+      ]
+    },
+    {
+      id: 4,
+      title: 'Лидерборд',
+      subMenu: [
+        { id: 4.1, title: 'Индивидуальные', count: 1},
+      ]
+    },
+    {
+      id: 5,
+      title: 'Новости',
+      subMenu: [
+        { id: 5.1, title: 'Индивидуальные', count: 2},
+      ]
+    },
     { id: 6, title: 'Календарь' },
     { id: 7, title: 'Опросы' },
     { id: 8, title: 'Магазин' },
@@ -32,5 +52,9 @@ export class AppComponent implements OnInit {
 
   closeMenu() {
     this.menu.close();
+  }
+
+  toggleSubMenu() {
+    this.showSubMenu = !this.showSubMenu;
   }
 }
