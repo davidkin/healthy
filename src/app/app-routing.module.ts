@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/group-leaderboard',
+    redirectTo: '/individual-news',
     pathMatch: 'full'
   },
   {
@@ -62,6 +62,10 @@ const routes: Routes = [
   {
     path: 'group-leaderboard',
     loadChildren: () => import('./pages/group-leaderboard/group-leaderboard.module').then( m => m.GroupLeaderboardPageModule)
+  },
+  {
+    path: 'individual-news',
+    loadChildren: () => import('./pages/individual-news/individual-news.module').then( m => m.IndividualNewsPageModule)
   },
 ];
 
