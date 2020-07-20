@@ -1,0 +1,181 @@
+@import "src/assets/styles/vars";
+@import "src/assets/styles/mixins";
+
+.content {
+  height: 100%;
+  position: relative;
+}
+
+.title {
+  border-bottom: 1px solid #939598;
+  color: #1a5ea9;
+  text-align: center;
+  font-family: 'OpenSans-Regular', sans-serif;
+  margin: 0;
+  font-size: 18px;
+  padding: 20px 0;
+}
+
+.chat-items {
+  margin-bottom: 125%;
+  width: 100%;
+  padding: 0;
+}
+
+.chat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin-top: 14px;
+}
+
+.message {
+  width: 72%;
+  min-height: 63px;
+  padding: 3% 4%;
+  border-radius: 8px;
+  position: relative;
+  margin: 0;
+}
+
+.client-message {
+  background-color: #ececec;
+
+  @include styleForText(12px, $fontLight);
+}
+
+.message-figure {
+  position: absolute;
+  border: 18px solid transparent;
+  bottom: -12px;
+}
+
+.message-figure-client {
+  border-top: 20px solid #ececec;
+  right: -1%;
+  transform: rotate(-139deg);
+}
+
+
+.chat-image {
+  width: 78.85px;
+  height: 78.85px;
+  margin-left: 8px;
+}
+
+.icon-wrapper {
+  margin-right: 8px;
+  width: 78.85px;
+  height: 78.85px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $colorBlue;
+}
+
+.icon-bot {
+  width: 54px;
+  height: 54px;
+  overflow: visible;
+
+  & path {
+    stroke: white;
+    fill: white;
+    stroke-width: 0;
+  }
+}
+
+.bot-message {
+  background-color: $colorBlue;
+
+  @include styleForText(12px, $fontRegular, white);
+}
+
+.message-figure-bot {
+  border-top: 20px solid $colorBlue;
+  left: 3%;
+  transform: rotate(-222deg);
+}
+
+.footer-wrapper {
+  position: absolute;
+  width: 100%;
+  bottom: 25px;
+}
+
+.input-wrapper {
+  position: absolute;
+  width: 85%;
+}
+
+.input {
+  @include styleForText(12px);
+
+  width: 100%;
+  --padding-top: 8px;
+  --padding-end: 73px;
+  --padding-bottom: 8px;
+  --padding-start: 2%;
+  border-radius: 5px;
+  border: 1px solid $colorText;
+}
+
+.button-input {
+  position: absolute;
+  padding: 0;
+  z-index: 100;
+}
+
+.button-photo {
+  right: 43px;
+  top: 3px;
+}
+
+.icon-photo {
+  width: 29px;
+  height: 28px;
+
+  & path {
+    fill: none;
+    stroke: $colorBlue;
+    stroke-width: 3px;
+  }
+}
+
+.icon-button {
+  background-color: white;
+}
+
+.button-smile {
+  right: 12px;
+  top: 5px;
+}
+
+.icon-smile {
+  width: 24px;
+  height: 24px;
+  overflow: visible;
+
+  & path {
+    stroke-width: 1px;
+  }
+}
+
+.button-submit {
+  right: 0;
+  top: 2px;
+  width: 32px;
+  height: 32px;
+}
+
+.icon-submit {
+  width: 32px;
+  height: 32px;
+  overflow: visible;
+
+  & path {
+    stroke-width: 1px;
+  }
+}

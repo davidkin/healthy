@@ -91,6 +91,10 @@ const routes: Routes = [
     path: 'team-news',
     loadChildren: () => import('./pages/team-news/team-news.module').then( m => m.TeamNewsPageModule)
   },
+  {
+    path: 'chat',
+    loadChildren: () => import('./pages/chat/chat.module').then( m => m.ChatPageModule)
+  },
 ];
 
 @NgModule({
