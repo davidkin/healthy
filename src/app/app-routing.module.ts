@@ -73,7 +73,7 @@ const routes: Routes = [
   },
   {
     path: 'store',
-    loadChildren: () => import('./pages/individual-leaderboard/individual-leaderboard.module').then( m => m.IndividualLeaderboardPageModule)
+    loadChildren: () => import('./pages/store/store.module').then( m => m.StorePageModule)
   },
 ];
 

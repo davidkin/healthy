@@ -15,4 +15,4 @@ import { StoreItemComponent } from './store-item/store-item.component';
     StoreItemComponent,
   ]
 })
-export class StorePagePageModule {}
+export class StorePageModule {}

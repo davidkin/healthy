@@ -1,1 +1,20 @@
-<p>store works!</p>
+<app-header [title]="'Наш магазин'"></app-header>
+
+<ion-content fullscreen class="dark-container">
+    <ion-grid class="container-grid">
+      
+        <ion-row justify-content-center align-items-center>
+            <ion-col size="12" ion-text-center>
+                
+                <div class="container">
+
+                    <h3 class="title">Обменивайте ваши шаги<br>на реальные спортивные товары!</h3>
+
+                   <app-list [list]="listData" [showLastBorder]="false" [customImgStyles]="{'width': '110px'}"></app-list>
+                </div>
+                
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+</ion-content>
