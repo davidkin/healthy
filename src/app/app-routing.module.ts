@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/portfolio-3',
+    redirectTo: '/team-news',
     pathMatch: 'full'
   },
   {
@@ -86,6 +86,10 @@ const routes: Routes = [
   {
     path: 'portfolio-3',
     loadChildren: () => import('./pages/portfolio-three/portfolio-three.module').then( m => m.PortfolioThreePageModule)
+  },
+  {
+    path: 'team-news',
+    loadChildren: () => import('./pages/team-news/team-news.module').then( m => m.TeamNewsPageModule)
   },
 ];
 
