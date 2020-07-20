@@ -9,13 +9,17 @@ import { HeaderComponent } from './components/header/header.component';
 import { AdviceComponent } from './components/advice/advice.component';
 import { RouterModule } from '@angular/router';
 import { SearchComponent } from './components/search/search.component';
+import { StepCounterComponent } from './components/step-counter/step-counter.component';
+import { TabsComponent } from './components/tabs/tabs.component';
 
 @NgModule({
   declarations: [
     ListComponent,
     HeaderComponent,
     AdviceComponent,
-    SearchComponent
+    SearchComponent,
+    StepCounterComponent,
+    TabsComponent
   ],
   imports: [
     CommonModule,
@@ -32,7 +36,9 @@ import { SearchComponent } from './components/search/search.component';
     ListComponent,
     HeaderComponent,
     AdviceComponent,
-    SearchComponent
+    SearchComponent,
+    StepCounterComponent,
+    TabsComponent
   ]
 })
 export class SharedModule {}

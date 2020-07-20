@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/food-program/lesson-1',
+    redirectTo: '/store',
     pathMatch: 'full'
   },
   {
@@ -54,6 +54,26 @@ const routes: Routes = [
   {
     path: 'web-rf-created',
     loadChildren: () => import('./pages/web-rf-created/web-rf-created.module').then( m => m.WebRfCreatedPageModule)
+  },
+  {
+    path: 'nutrition',
+    loadChildren: () => import('./pages/nutrition/nutrition.module').then( m => m.NutritionPageModule)
+  },
+  {
+    path: 'group-leaderboard',
+    loadChildren: () => import('./pages/group-leaderboard/group-leaderboard.module').then( m => m.GroupLeaderboardPageModule)
+  },
+  {
+    path: 'individual-news',
+    loadChildren: () => import('./pages/individual-news/individual-news.module').then( m => m.IndividualNewsPageModule)
+  },
+  {
+    path: 'individual-leaderboard',
+    loadChildren: () => import('./pages/individual-leaderboard/individual-leaderboard.module').then( m => m.IndividualLeaderboardPageModule)
+  },
+  {
+    path: 'store',
+    loadChildren: () => import('./pages/store/store.module').then( m => m.StorePageModule)
   },
 ];
 

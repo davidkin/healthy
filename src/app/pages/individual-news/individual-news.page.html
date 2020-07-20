@@ -1,0 +1,42 @@
+<app-header [title]="'Индивидуальные новости'"></app-header>
+
+<ion-content fullscreen class="dark-container">
+    <ion-grid class="container-grid">
+      
+        <ion-row justify-content-center align-items-center>
+            <ion-col size="12" ion-text-center>
+                
+                <div class="container">
+                    <ion-item class='title-block'>
+                        <ion-label class="title">История уведомлений</ion-label>
+                        <ion-note class="note" slot="end">3</ion-note>
+                    </ion-item>
+                    
+                    <ul class="news-list">
+                        <li class="news-list-item">
+                            <span class="news-note">10.06.2020</span>
+                            <p class="news-title">Тут текст новости</p>
+                        </li>
+                        <li class="news-list-item">
+                            <span class="news-note">10.06.2020</span>
+                            <p class="news-title">Тут текст новости</p>
+                        </li>
+                        <li class="news-list-item">
+                            <span class="news-note">10.06.2020</span>
+                            <p class="news-title">Тут текст новости</p>
+                        </li>
+                    </ul>
+
+                    <ion-item class='title-block'>
+                        <ion-label class="title">Активные задания от куратора</ion-label>
+                        <ion-note class="note" slot="end">3</ion-note>
+                    </ion-item>
+
+                    <app-list [list]="listData" [showLastBorder]="false"></app-list>
+                </div>
+                
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+</ion-content>

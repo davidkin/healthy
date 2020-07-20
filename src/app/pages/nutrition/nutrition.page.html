@@ -1,0 +1,47 @@
+<app-header [title]="'Питание'"></app-header>
+
+<ion-content fullscreen class="dark-container">
+    <ion-grid class="container-grid">
+      
+        <ion-row justify-content-center align-items-center>
+            <ion-col size="12" ion-text-center>
+                
+                <div class="container">
+
+                    <div class="header">
+                        <div class="title-block">
+                            <h5 class="title">Информация</h5>
+                            <p class="title-desc">Начало и конец программы 20.02.2020-30.03.2020</p>
+                        </div>
+
+                        <div class="img-block">
+                            <ion-thumbnail>
+                                <img src="assets/images/nutrition/apple.png" alt="apple">
+                            </ion-thumbnail>
+                        </div>
+                    </div>
+
+                    <div class="content">
+                        <div class="link-block">
+                            <a class="link" [routerLink]="['']">Лекции и домашнее задание</a>
+                        </div>
+
+                        <div class="progress-bar-block">
+                            <ion-progress-bar class="progress-bar" value="0.5"></ion-progress-bar>
+                            <p class="progress-text">Участники уже прошли 5 из 10 уроков</p>
+                        </div>
+
+                        <div class="list-block">
+                            <h5 class="title">Лидерборд</h5>
+
+                            <app-list [list]="listData" [customLabelStyles]="{ 'margin-left': '10px' }" [showLastBorder]="false"></app-list>
+                        </div>
+                    </div>
+
+                </div>
+                
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+</ion-content>

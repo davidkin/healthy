@@ -8,10 +8,10 @@ import { IList } from 'src/app/shared/interfaces/List';
 export class WebRfCreatedPage implements OnInit {
 
   listData: IList[] = [
-    { img: 'assets/images/qa/apple.png', title: 'Питание', editButton: 'Редактировать' },
-    { img: 'assets/images/qa/run.png', title: 'Физ. aктивность', editButton: 'Редактировать' },
-    { img: 'assets/images/qa/mind.png', title: 'Психология', editButton: 'Редактировать' },
-    { img: 'assets/images/qa/apple.png', title: 'Психология', editButton: 'Редактировать' },
+    { img: 'assets/images/qa/apple.png', title: 'Питание', button: 'Редактировать' },
+    { img: 'assets/images/qa/run.png', title: 'Физ. aктивность', button: 'Редактировать' },
+    { img: 'assets/images/qa/mind.png', title: 'Психология', button: 'Редактировать' },
+    { img: 'assets/images/qa/apple.png', title: 'Психология', button: 'Редактировать' },
   ];
 
   constructor() { }
