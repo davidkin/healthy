@@ -1,4 +1,5 @@
 export interface IList {
+    id?: number;
     img: string;
     src?: string;
     title: string;

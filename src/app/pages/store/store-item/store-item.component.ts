@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { IList } from 'src/app/shared/interfaces/List';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-store-item',
@@ -6,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./store-item.component.scss']
 })
 export class StoreItemComponent implements OnInit {
+  @Input() localStoreItem: IList;
 
   constructor() { }
 
