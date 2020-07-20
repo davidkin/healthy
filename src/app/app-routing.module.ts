@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/food-program/lesson-1',
+    redirectTo: '/group-leaderboard',
     pathMatch: 'full'
   },
   {
@@ -58,6 +58,10 @@ const routes: Routes = [
   {
     path: 'nutrition',
     loadChildren: () => import('./pages/nutrition/nutrition.module').then( m => m.NutritionPageModule)
+  },
+  {
+    path: 'group-leaderboard',
+    loadChildren: () => import('./pages/group-leaderboard/group-leaderboard.module').then( m => m.GroupLeaderboardPageModule)
   },
 ];
 
