@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/group-task',
+    redirectTo: '/store',
     pathMatch: 'full'
   },
   {
@@ -69,6 +69,10 @@ const routes: Routes = [
   },
   {
     path: 'individual-leaderboard',
+    loadChildren: () => import('./pages/individual-leaderboard/individual-leaderboard.module').then( m => m.IndividualLeaderboardPageModule)
+  },
+  {
+    path: 'store',
     loadChildren: () => import('./pages/individual-leaderboard/individual-leaderboard.module').then( m => m.IndividualLeaderboardPageModule)
   },
 ];
