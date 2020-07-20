@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/store',
+    redirectTo: '/team-news',
     pathMatch: 'full'
   },
   {
@@ -74,6 +74,22 @@ const routes: Routes = [
   {
     path: 'store',
     loadChildren: () => import('./pages/store/store.module').then( m => m.StorePageModule)
+  },
+  {
+    path: 'portfolio',
+    loadChildren: () => import('./pages/portfolio/portfolio.module').then( m => m.PortfolioPageModule)
+  },
+  {
+    path: 'portfolio-2',
+    loadChildren: () => import('./pages/portfolio-two/portfolio-two.module').then( m => m.PortfolioTwoPageModule)
+  },
+  {
+    path: 'portfolio-3',
+    loadChildren: () => import('./pages/portfolio-three/portfolio-three.module').then( m => m.PortfolioThreePageModule)
+  },
+  {
+    path: 'team-news',
+    loadChildren: () => import('./pages/team-news/team-news.module').then( m => m.TeamNewsPageModule)
   },
   {
     path: 'chat',
