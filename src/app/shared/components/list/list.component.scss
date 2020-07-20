@@ -17,6 +17,7 @@
 
     &-img {
         margin-right: 25px;
+        width: 50px;
     }
 
     &-link {
@@ -30,10 +31,16 @@
         --color: #3c3c3b;
         font-family: 'OpenSans-Regular', sans-serif;
         font-size: 14px;
-
+        
         &-span {
             color: #0360aa;
         }
+    }
+    
+    &-sub-desc {
+        font-size: 14px;
+        font-family: 'OpenSans-Regular', sans-serif;
+        color: #0360aa;
     }
 
     &-edit-button {

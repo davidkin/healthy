@@ -6,19 +6,20 @@
         (click)="testClick()" 
         [lines]="last && !showLastBorder ? 'none' : 'line'"
     >
-        <ion-thumbnail class="list-img" [ngStyle]="customStyles">
+        <div class="list-img" [ngStyle]="customStyles">
             <img [src]="item.img">
-        </ion-thumbnail>
-    
+        </div>
+        
         <ion-label class="list-label" [ngStyle]="customStyles">
             <span *ngIf="item.subTitle" class="list-sub-title">{{ item.subTitle }}</span>
             {{ item.title }}
-            <a *ngIf="item.subLink" [routerLink]="['']" class="list-link">{{ item.subLink }}</a>
+            <span *ngIf="item.subDesc" class="list-sub-desc">{{ item.subDesc }}</span>
+            <a *ngIf="item.src && item.subLink" [routerLink]="['/' + item.src]" class="list-link">{{ item.subLink }}</a>
             <ion-button 
-                *ngIf="item.editButton" 
+                *ngIf="item.button" 
                 size="small"
                 class="list-edit-button"
-            >{{ item.editButton }}</ion-button>
+            >{{ item.button }}</ion-button>
         </ion-label>
 
         <ion-note *ngIf="item.note" slot="end" class="list-note">

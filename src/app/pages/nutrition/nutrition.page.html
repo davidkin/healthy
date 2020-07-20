@@ -1,4 +1,4 @@
-<app-header [title]="'Индивидуальные задания'"></app-header>
+<app-header [title]="'Питание'"></app-header>
 
 <ion-content fullscreen class="dark-container">
     <ion-grid class="container-grid">
@@ -7,33 +7,37 @@
             <ion-col size="12" ion-text-center>
                 
                 <div class="container">
-                   <app-list 
-                        [list]="listData" 
-                        [showLastBorder]="false" 
-                    ></app-list>
 
-                    <div class="item-group">
-                        <div class="item">
-                            <ion-thumbnail class="item-img">
-                                <img src="assets/images/individual/man.png" alt="man">
-                            </ion-thumbnail>
-                            <p class="item-text">Личный кабинет</p>
+                    <div class="header">
+                        <div class="title-block">
+                            <h5 class="title">Информация</h5>
+                            <p class="title-desc">Начало и конец программы 20.02.2020-30.03.2020</p>
                         </div>
 
-                        <div class="item">
-                            <ion-thumbnail class="item-img">
-                                <img src="assets/images/individual/goblet.png" alt="goblet">
+                        <div class="img-block">
+                            <ion-thumbnail>
+                                <img src="assets/images/nutrition/apple.png" alt="apple">
                             </ion-thumbnail>
-                            <p class="item-text">Лидерборд</p>
-                        </div>
-
-                        <div class="item">
-                            <ion-thumbnail class="item-img">
-                                <img src="assets/images/individual/calendar.png" alt="calendar">
-                            </ion-thumbnail>
-                            <p class="item-text">Календарь</p>
                         </div>
                     </div>
+
+                    <div class="content">
+                        <div class="link-block">
+                            <a class="link" [routerLink]="['']">Лекции и домашнее задание</a>
+                        </div>
+
+                        <div class="progress-bar-block">
+                            <ion-progress-bar class="progress-bar" value="0.5"></ion-progress-bar>
+                            <p class="progress-text">Участники уже прошли 5 из 10 уроков</p>
+                        </div>
+
+                        <div class="list-block">
+                            <h5 class="title">Лидерборд</h5>
+
+                            <app-list [list]="listData" [customStyles]="{ 'margin-left': '10px' }" [showLastBorder]="false"></app-list>
+                        </div>
+                    </div>
+
                 </div>
                 
             </ion-col>
