@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/store',
+    redirectTo: '/portfolio',
     pathMatch: 'full'
   },
   {
@@ -77,7 +77,7 @@ const routes: Routes = [
   },
   {
     path: 'portfolio',
-    loadChildren: () => import('./pages/store/store.module').then( m => m.StorePageModule)
+    loadChildren: () => import('./pages/portfolio/portfolio.module').then( m => m.PortfolioPageModule)
   },
 ];
 
