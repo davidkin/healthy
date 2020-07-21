@@ -11,6 +11,8 @@ import { RouterModule } from '@angular/router';
 import { SearchComponent } from './components/search/search.component';
 import { StepCounterComponent } from './components/step-counter/step-counter.component';
 import { TabsComponent } from './components/tabs/tabs.component';
+import { PopupOneComponent } from './components/popup-one/popup-one.component';
+import { PopupTwoComponent } from './components/popup-two/popup-two.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { TabsComponent } from './components/tabs/tabs.component';
     AdviceComponent,
     SearchComponent,
     StepCounterComponent,
-    TabsComponent
+    TabsComponent,
+    PopupOneComponent,
+    PopupTwoComponent
   ],
   imports: [
     CommonModule,
@@ -38,7 +42,9 @@ import { TabsComponent } from './components/tabs/tabs.component';
     AdviceComponent,
     SearchComponent,
     StepCounterComponent,
-    TabsComponent
+    TabsComponent,
+    PopupOneComponent,
+    PopupTwoComponent,
   ]
 })
 export class SharedModule {}
