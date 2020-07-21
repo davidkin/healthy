@@ -13,6 +13,7 @@ import { StepCounterComponent } from './components/step-counter/step-counter.com
 import { TabsComponent } from './components/tabs/tabs.component';
 import { PopupOneComponent } from './components/popup-one/popup-one.component';
 import { PopupTwoComponent } from './components/popup-two/popup-two.component';
+import { FlatTabsComponent } from './components/flat-tabs/flat-tabs.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { PopupTwoComponent } from './components/popup-two/popup-two.component';
     StepCounterComponent,
     TabsComponent,
     PopupOneComponent,
-    PopupTwoComponent
+    PopupTwoComponent,
+    FlatTabsComponent,
   ],
   imports: [
     CommonModule,
@@ -45,6 +47,7 @@ import { PopupTwoComponent } from './components/popup-two/popup-two.component';
     TabsComponent,
     PopupOneComponent,
     PopupTwoComponent,
+    FlatTabsComponent,
   ]
 })
 export class SharedModule {}
