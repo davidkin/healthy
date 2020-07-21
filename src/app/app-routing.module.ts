@@ -96,6 +96,14 @@ const routes: Routes = [
     loadChildren: () => import('./pages/chat/chat.module').then( m => m.ChatPageModule)
   },
   {
+    path: 'lesson-published',
+    loadChildren: () => import('./pages/lesson-published/lesson-published.module').then( m => m.LessonPublishedPageModule)
+  },
+  {
+    path: 'lesson-form',
+    loadChildren: () => import('./pages/lesson-form/lesson-form.module').then(m => m.LessonFormPageModule)
+  },
+  {
     path: 'team-published',
     loadChildren: () => import('./pages/team-news-published/team-news-published.module').then( m => m.TeamNewsPublishedPageModule)
   },
