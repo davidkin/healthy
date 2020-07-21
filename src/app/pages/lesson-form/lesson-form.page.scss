@@ -1,0 +1,16 @@
+@import "src/assets/styles/vars";
+@import "src/assets/styles/mixins";
+
+.header {
+
+  .img-block {
+    width: 50px;
+    margin-right: 25px;
+  }
+
+  .label {
+    @include styleForText(19px, $fontLight);
+
+    margin-bottom: 15px;
+  }
+}
