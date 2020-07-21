@@ -1,0 +1,38 @@
+<app-header [title]="'Календарь'"></app-header>
+
+<ion-content fullscreen class="dark-container">
+    <ion-grid class="container-grid">
+      
+        <ion-row justify-content-center align-items-center>
+            <ion-col size="12" ion-text-center>
+                
+                <div class="container" style="height: 100%;">
+                    
+                    <div class="img-block">
+                        <img src="assets/images/calendar/calendar.png" alt="calendar">
+                    </div>
+
+                    <ion-list class="calendar-info">
+                        <ion-item class="calendar-item calendar-active">
+                            <ion-label class="calendar-label">Новое задание от куратора</ion-label>
+                            <ion-note class="calendar-note">18</ion-note>
+                        </ion-item>
+
+                        <ion-item class="calendar-item">
+                            <ion-label class="calendar-label">Дата сдачи ДЗ (программа питания)</ion-label>
+                            <ion-note class="calendar-note">20</ion-note>
+                        </ion-item>
+
+                        <ion-item class="calendar-item">
+                            <ion-label class="calendar-label">Запуск новой программы~</ion-label>
+                            <ion-note class="calendar-note">28</ion-note>
+                        </ion-item>
+                    </ion-list>
+
+                </div>
+                
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+</ion-content>
