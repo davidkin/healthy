@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/team-published',
+    redirectTo: '/calendar',
     pathMatch: 'full'
   },
   {
@@ -98,6 +98,10 @@ const routes: Routes = [
   {
     path: 'team-published',
     loadChildren: () => import('./pages/team-news-published/team-news-published.module').then( m => m.TeamNewsPublishedPageModule)
+  },
+  {
+    path: 'calendar',
+    loadChildren: () => import('./pages/calendar/calendar.module').then( m => m.CalendarPageModule)
   },
 ];
 
