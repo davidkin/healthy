@@ -1,0 +1,62 @@
+<app-header [title]="'Календарь'"></app-header>
+
+<ion-content fullscreen class="dark-container">
+    <ion-grid class="container-grid">
+      
+        <ion-row justify-content-center align-items-center>
+            <ion-col size="12" ion-text-center>
+                
+                <div class="container" style="height: 100%;">
+                    <div class="news-block">
+                        <ion-input type="text" class="input" placeholder="Название программы"></ion-input>
+                    </div>
+
+                    <a href="javascript:void(0);" class="link">Загрузить лого/аватар программы</a>
+
+                    <div class="time-longer">
+                        <h3 class="title">Продолжительность программы</h3>
+
+                        <div class="control-time">
+                            <div class="input-block">
+                                <p class="time-text">Начало программы</p>
+                                <ion-input type="text" class="input time-input" placeholder="00.00.0000"></ion-input>
+                            </div>
+                            <div class="input-block">
+                                <p class="time-text">Окончание программы</p>
+                                <ion-input type="text" class="input time-input" placeholder="00.00.0000"></ion-input>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="img-block">
+                        <img src="assets/images/calendar/calendar.png" alt="calendar">
+                    </div>
+
+                    <div class="team-tracker">
+                        <h3 class="title">Команды</h3>
+
+                        <div class="team">
+                            <div class="team-block">
+                                <p class="team-text">Количество команд</p>
+                                <ion-input type="text" class="input team-input" placeholder=""></ion-input>
+                            </div>
+                            <div class="team-block">
+                                <p class="team-text">Максимальное количество человек в команде</p>
+                                <ion-input type="text" class="input team-input" placeholder=""></ion-input>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="btn-block">
+                        <ion-button class="button register-button" style="font-size: 18px; --background: #0361aa; --color: #fff; margin-bottom: 10px;" expand="block">Сохранить</ion-button>
+                    </div>
+
+                </div>
+                
+            </ion-col>
+        </ion-row>
+
+    </ion-grid>
+</ion-content>

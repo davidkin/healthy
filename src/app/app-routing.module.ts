@@ -4,7 +4,7 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: '/calendar',
+    redirectTo: '/create-program',
     pathMatch: 'full'
   },
   {
@@ -110,6 +110,10 @@ const routes: Routes = [
   {
     path: 'calendar',
     loadChildren: () => import('./pages/calendar/calendar.module').then( m => m.CalendarPageModule)
+  },
+  {
+    path: 'create-program',
+    loadChildren: () => import('./pages/create-program/create-program.module').then( m => m.CreateProgramPageModule)
   },
 ];
 
